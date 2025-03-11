@@ -1,0 +1,394 @@
+
+/* permanent body color for every page */
+body{
+    background-color:#FEF9E1;
+}
+
+/* image for index page */
+.Home{
+    position: relative;
+}
+
+
+.Home img{
+    width: 100%;
+    height:90vh;
+    background-repeat: no-repeat;
+}
+
+
+/* for marquee and header of index page */
+.banner-text {
+    position: absolute;
+    top: 100px;
+    color: black;
+    left: 5px;
+}
+
+.banner-text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:17px;
+}
+
+/* for bootsrap cards of index page */
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px white;
+    margin: 20px;
+}
+
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+h2{
+    text-align: center;
+}
+
+/* aboutus section photo */
+.House1{
+  width: 100%;
+  height:90vh ;
+  position: relative;
+  background-image: url(./4k.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+@media screen and (max-width: 1023px) {
+.House1 {
+    height: 120vh; /* Reduce height on smaller screens */
+    background-size: contain;
+    background-position: center;
+}
+}
+
+@media screen and (max-width: 480px) {
+.House1 {
+    height: 70vh; /* Reduce height further on very small screens */
+    background-size: contain;
+    background-position: center;
+}
+}
+
+/* contactus section photo */
+.House{
+    width: 100%;
+    height:80vh ;
+    position: relative;
+    background-image: url(./all-India-Tour.jpg  );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@media screen and (max-width: 1023px) {
+  .House {
+      height: 120vh; /* Reduce height on smaller screens */
+      background-size: contain;
+      background-position: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .House {
+      height: 70vh; /* Reduce height further on very small screens */
+      background-size: contain;
+      background-position: center;
+  }
+}
+
+/* packages section photo */
+.Inhouse{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./maxresdefault.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .Inhouse {
+      height: 120vh; /* Reduce height on smaller screens */
+      background-size: contain;
+      background-position: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Inhouse {
+      height: 70vh; /* Reduce height further on very small screens */
+      background-size: contain;
+      background-position: center;
+  }
+}
+
+/* for bootsrap cards of packages page */
+.packages-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card-body .card-link{
+    /* display: inline-block; */
+    padding: 10px 20px;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.card-body .card-link-1{
+    /* display: inline-block; */
+    padding: 10px 10px;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.contains{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.card-body .card-link{
+  /* display: inline-block; */
+  padding: 10px 20px;
+  background-color: blue;
+  color: whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card-body .card-link-1{
+  /* display: inline-block; */
+  padding: 10px 10px;
+  background-color: blue;
+  color: whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+ /* footer for all pages css style */
+ footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .mediaicons a {
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .footernav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footernav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footernav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footernav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Query for tablets  */
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mediaicons {
+      margin-bottom: 20px;
+    }
+  
+    .mediaicons a {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  
+    .footernav ul {
+      text-align: center;
+    }
+  
+    .footernav li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media Query for mobiles */
+  @media (max-width: 480px) {
+    .footerContainer {
+      padding: 10px;
+    }
+  
+    .mediaicons a {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  
+    .footernav li {
+      margin-right: 0;
+    }
+  }
+
+  
+
+
+/* Login page  & Register page structure card   */
+
+  form {
+    background-color: bisque;
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 150px;
+    width: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-label {
+    margin-top: 5px;
+  }
+  
+  button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    
+  }
+
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .row {
+      height: auto; 
+      padding: 15px; 
+  }
+  form {
+      width: 90%; 
+      padding: 20px; 
+  }
+  .col {
+      width: 100%; 
+      margin-bottom: 10px;
+  }
+  .form-label {
+      font-size: 14px;
+  }
+  input.form-control {
+      font-size: 14px;
+  }
+  button {
+      width: 100%; 
+      border-radius: 50px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1023px) {
+  form {
+      width: 50%; 
+      padding: 30px; 
+  }
+  .row {
+      flex-direction: row;
+  }
+  .col {
+      margin-bottom: 15px;
+  }
+  .form-label {
+      font-size: 16px;
+  }
+  input.form-control {
+      font-size: 16px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 769px) {
+  form {
+      width: 30%; /* Keep form smaller on large screens */
+  }
+}
+
+/* contact us card structure */
+.contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.contact .content{
+  text-align: center;
+}
+
+
+.contain{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:whitesmoke;
+}
+
+
+
+
+
+
+
